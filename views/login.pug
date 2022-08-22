@@ -1,0 +1,12 @@
+extends layouts/login-layout.pug
+
+block content
+    .loginContainer 
+        h1 Twitter-Clone
+        form(method='post')
+            p.errMessage #{errorMessage}
+            input(type="text", name="logUsername", placeholder='Enter Username or email', value=logUsername required="")
+            input(type="password", name="logPassword", placeholder='Enter Password', required="")
+       
+            input(type="submit", value="Login")
+        a(href="/register") New to Twitter-Clone? SignUp

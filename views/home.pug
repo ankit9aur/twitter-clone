@@ -1,0 +1,9 @@
+extends layouts/main-layout.pug
+
+block content
+    +createPostForm(userLoggedIn)
+    .postsContainer
+    +createReplyModal(userLoggedIn)
+    +createDeleteModal()
+block scripts
+    script(src="/js/home.js")       
